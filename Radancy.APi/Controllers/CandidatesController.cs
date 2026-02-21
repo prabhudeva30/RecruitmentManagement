@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 namespace Radancy.APi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CandidatesController : ControllerBase
     {
         private readonly ILogger<CandidatesController> _logger;
