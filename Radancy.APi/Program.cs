@@ -16,6 +16,7 @@ builder.Services.AddApplicationServices(builder.Configuration);
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>(); // Custom middleware for exception handling
+app.UseMiddleware<BasicApiKeyMiddleware>(); // basic API key authentication middleware
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

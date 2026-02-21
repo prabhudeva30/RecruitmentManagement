@@ -4,7 +4,7 @@ namespace Data.Entities
 {
     public class CandidateEntity
     {
-        public int Id { get; set; }
+        public int CandidateId { get; set; }
 
         [Column(TypeName = "varchar(50)")]
         public string FullName { get; set; }

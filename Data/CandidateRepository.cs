@@ -17,7 +17,7 @@ namespace Data
         public async Task<List<CandidateEntity>> SearchCandidatesAsync(string fullName)
         {
             return await _rDbContext.Candidates
-                .Where(candidate => candidate.FullName.Equals(fullName, StringComparison.OrdinalIgnoreCase))
+                .Where(candidate => candidate.FullName.Equals(fullName))
                 .ToListAsync();
         }
     }

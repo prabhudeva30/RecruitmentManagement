@@ -14,7 +14,7 @@ namespace Data.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<CandidateEntity>().ToTable("Candidate").HasKey(x => x.Id);
+            modelBuilder.Entity<CandidateEntity>().ToTable("Candidate").HasKey(x => x.CandidateId);
         }
     }
 }

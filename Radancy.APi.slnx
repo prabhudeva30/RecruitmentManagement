@@ -1,5 +1,8 @@
 <Solution>
+  <Project Path="Core.Tests/Core.Tests.csproj" />
   <Project Path="Core/Core.csproj" />
+  <Project Path="Data.Tests/Data.Tests.csproj" />
   <Project Path="Data/Data.csproj" />
+  <Project Path="Radancy.API.Tests/Radancy.API.Tests.csproj" Id="81811b32-0bca-447a-864e-045e9377eebb" />
   <Project Path="Radancy.APi/Radancy.APi.csproj" />
 </Solution>
